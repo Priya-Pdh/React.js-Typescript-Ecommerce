@@ -1,0 +1,36 @@
+#StarRating-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+   input[type="radio"] {
+    display: none;
+  }
+   .star {
+    cursor: pointer;
+    transition: color 200ms;
+    width: 20%;
+  }
+  .star-rating-radio {
+    visibility: hidden;
+  }
+   /* for iPad*/
+  @media only screen
+  and (min-device-width: 820px)
+    and (max-device-width: 1024px)
+  {
+    .star {
+      width: 12%;
+    }
+  }
+     /* for mobile*/
+  @media only screen
+  and (min-device-width: 360px)
+    and (max-device-width: 819px)
+  {
+    .star {
+      width: 8%;
+    } 
+  }
+ 

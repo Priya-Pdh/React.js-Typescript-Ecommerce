@@ -1,0 +1,61 @@
+.conatactus-conatiner {
+    display: flex;
+    width: 100wh;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0 5% 0;
+ }
+
+.accordion {
+   width: 80%;
+   margin-left: 10%;
+}
+
+
+ .heading-FAQ {
+    color: rgb(82, 60, 47);
+
+ }
+
+ .questions-container-btn {
+   line-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   width: 80%;
+   height: 40px;
+   margin-bottom: 5px;
+ }
+  
+ .answers-container-btn {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  height: 70px;
+ }
+
+
+ .contact-para {
+    color: rgb(201, 138, 104);
+ }
+ 
+
+  /* for mobile*/
+  @media only screen 
+  and (min-device-width: 360px) 
+    and (max-device-width: 819px)
+  { 
+    .questions-container-btn {
+        font-size: 8px;
+        line-height: 0.75rem;
+    }
+    .answers-container-btn {
+      font-size: 10px;
+      line-height: 0.75rem;
+      height: 60px;
+  }
+   } 
+

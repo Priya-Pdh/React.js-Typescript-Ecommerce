@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "question": "How to get in contact with Shoppers?",
+      "answer": "To get in contact with us, you can reach us via email or on our Facebook or Instagram account."
+    },
+  
+    {
+      "id": 2,
+      "question": "I'm intersted in collaborating. Whom do I contact?",
+      "answer": "We love hearing this! Send your request to collaboration@shoppers.com, and give us information about your channel/platform, your followers and why you are a good fit with Shoppers."
+    },
+    {
+      "id": 3,
+      "question": "Where do you ship?",
+      "answer": "Currently, we ship all around the world."
+    },
+    {
+      "id": 4,
+      "question": "What are you shipping option?",
+      "answer": "We offer three ways to get your order quickly: Standard shipping to Europe and territories is free. Most orders are delivered within 3-5 business days. For even faster service, two-day expedited shipping is available for €15. Orders placed after 12:00 pm ET will ship the following business day."
+    },
+    {
+      "id": 5,
+      "question": "I haven't received my order yet, what do i do?",
+      "answer": "Please check your mailbox, including your spam folder, for an email from hello@Shoopers.com. The email will have your order tracking information."
+    },
+    {
+      "id": 6,
+      "question": "What is the return policy?",
+      "answer": "All Shoppers products carry a 180-day 100% Satisfaction Guarantee. If the product that you purchased isn't a good fit for you, for any reason, please send us proof of purchase to hello@Shoppers.com. We will happily issue you a refund."
+    },
+    {
+      "id": 7,
+      "question": "Why should I create a customer account?",
+      "answer": "We encourage you to create a customer account. An account will allow you to keep a record of all your purchases, billing and order tracking information. You can also store multiple shipping addresses to expedite the check-out process."
+    },
+    {
+      "id": 8,
+      "question": "Where are Shoppers's product made?",
+      "answer": "All of our products are made in Europe."
+    },
+  
+    {
+      "id": 9,
+      "question": "Still have questions?",
+      "answer": "If you have additional questions, please contact us at hello@Shoppers.com"
+    }
+  ]
+  

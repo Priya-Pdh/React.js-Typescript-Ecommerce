@@ -1,0 +1,43 @@
+#footer-container {
+    background-color:  rgb(82,60,47);
+    color: rgb(243,243,243);
+    padding-bottom: 30px;
+    line-height: 2rem;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+}
+.footer-icons-list {
+    color: rgb(243,243,243);;
+}
+#email-input {
+  width: 20%;
+  height: 10%;
+}
+
+/* for iPad*/
+@media only screen 
+and (min-device-width: 820px) 
+  and (max-device-width: 1024px) 
+{ 
+  
+  .footer-text {
+    font-size: 20px;
+  }
+}
+
+
+ /* for mobile*/
+ @media only screen 
+ and (min-device-width: 360px) 
+   and (max-device-width: 819px)
+ { 
+    .footer-text  {
+    font-size: 10px;
+  }
+  
+  } 

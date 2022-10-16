@@ -1,0 +1,56 @@
+.main-cart-container {
+    background-color: rgb(224, 214, 203);
+    height: 100vh;
+  }
+  
+  .cart-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+  }
+  .total {
+    background-color: rgb(115, 148, 132);
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .checkout-conatiner {
+    margin-top: 10px;
+    padding-bottom: 20px ;
+  }
+  #checkout-button {
+    width: 10%;
+    font-weight: bold;
+    background-color: rgb(243, 243, 243);;
+  }
+  #checkout-button:hover {
+    background-color: rgb(201, 138, 104);;
+  }
+  /* for iPad*/
+  @media only screen 
+  and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+  {
+    h2, p {
+      font-size: 12px;
+    }
+    #checkout-button {
+      font-size: 12px;
+    }
+    
+  }
+     /* for mobile*/
+  @media only screen 
+  and (min-device-width: 360px) 
+    and (max-device-width: 864px)
+  { 
+    h2, p {
+      font-size: 10px;
+    }
+    #checkout-button {
+      font-size: 8px;
+      margin-bottom: 5px;
+      width: 12%;
+    }
+  }

@@ -1,0 +1,8 @@
+* {
+  --primary-color: rgb(243, 243, 243);
+  --secondary-color: rgb(224, 214, 203);
+  --tertiary-color: rgb(201, 138, 104);
+  --quaternary-color: rgb(115, 148, 132);
+  --quinary-color: rgb(82, 60, 47);
+  font-family: 'Bodoni Moda', sans-serif;
+}

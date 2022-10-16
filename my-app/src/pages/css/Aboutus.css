@@ -1,0 +1,136 @@
+.welcome-img-wrapper {
+    display: flex;
+    justify-content: flex-end;
+   }
+    
+   #first-img {
+    width: 65%;
+   }
+    
+   .title {
+    color: rgb(201, 138, 104);
+    font-size: 23px;
+    margin: 20% 5% 0 5%;
+    font-weight: bold;
+   }
+   /* story section*/
+   #story-img {
+    width: 80%;
+   }
+    
+   .story-title {
+    color: rgb(201, 138, 104);
+    margin-top: 5%;
+   }
+    
+   #story-wrapper {
+    display: flex;
+    gap: 5%;
+    margin: 5%;
+   }
+    
+   #sustainablity-img {
+    width: 50%;
+   }
+   #sustainablity-wrapper {
+    display: flex;
+    gap: 5%;
+    margin: 0 5% 5% 5%;
+   }
+    
+   .section-list {
+    line-height: 2rem;
+   }
+    
+   /*circular button*/
+   .green-button {
+    background-color: rgb(115, 148, 132);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 7%;
+    margin-left: 28%;
+   }
+    
+   /* value section*/
+   .Values-title {
+    color: rgb(201, 138, 104);
+   }
+   #value-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+   }
+   .value-list {
+    border-right: 1px solid rgb(82, 60, 47);
+    text-align: center;
+    padding: 0 10px 0 10px;
+   }
+   .value-list:last-child {
+    border: none;
+   }
+    
+   .value-img {
+    width: 60%;
+    height: 60%;
+    border-radius: 500px;
+   }
+    
+   /* last section*/
+    
+   #last-section {
+    margin: 2%;
+    color: rgb(201, 138, 104);
+   }
+    
+   /* for iPad*/
+   @media only screen and (min-device-width: 820px) and (max-device-width: 1024px) {
+    #story-img {
+      width: 50%;
+    }
+    .section-list {
+      font-size: 12px;
+    }
+    .green-button {
+      width: 60%;
+      height: 10%;
+    }
+   }
+    
+   /* for mobile*/
+   @media only screen and (min-device-width: 360px) and (max-device-width: 819px) {
+    .title {
+      font-size: 10px;
+    }
+    .section-list {
+      font-size: 8px;
+      line-height: 1rem;
+    }
+    .section-title {
+      font-size: 8px;
+    }
+    #story-img {
+      width: 60%;
+    }
+    
+    #sustainablity-img {
+      width: 40%;
+    }
+    .green-button {
+      width: 50%;
+      font-size: 6px;
+    }
+    
+    #last-section {
+      margin-top: 20%;
+      font-size: 10px;
+    }
+   }
+    
+   
+   
