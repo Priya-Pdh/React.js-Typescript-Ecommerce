@@ -47,11 +47,6 @@ function NavBar() {
               </Link>
             </li>
             <li className="navbar-list">
-              <Link to="/Signup">
-                Signup
-              </Link>
-            </li>
-            <li>
             <FaCartPlus  onClick= {onClick} id="itemsInCart"/>
               {getTotalItems(cartItems)}
             </li>

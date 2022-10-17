@@ -1,17 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Input from "../component/Input";
 import "./css/Checkout.css";
 import { FaRegCreditCard, FaCcVisa, FaPaypal } from "react-icons/fa";
 import NavBar from "../component/navbar/Navbar";
 import Footer from "../component/footer/Footer";
+import { usePersonalDetailsContext } from "../component/context/PersonalDetailsContext";
+
 
 function Checkout() {
+  const { setName } = usePersonalDetailsContext();
+  const {  setStreetAddress } = usePersonalDetailsContext();
+  const { setEmail } = usePersonalDetailsContext();
+  
+  const [fullName, setFullName]= useState("");
+  const [emailAddress, setEmailAddress]= useState("");
+  const [address, setAddress] = useState("");
+  
+  
   const navigate = useNavigate();
 
 
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
+    setName(fullName);
+    setStreetAddress(address);
+    setEmail(emailAddress); 
+   
     navigate("/Thankyou");
   };
 
@@ -26,44 +40,42 @@ function Checkout() {
         >
           <h2 className="personal-info">Personal Information</h2>
           <label className="input-label">Your Full Name</label>
-          <Input
+          <input
             type="text"
             className="form-info"
             id="fullName"
             name="fullName"
             placeholder="Full Name"
+            value= {fullName}
+            onChange= {(e) => setFullName(e.target.value)}
           />
           <br />
           <label>Email Address </label>
-          <Input
+          <input
             type="text"
             className="form-info"
             id="checkout-email"
             name="email"
             placeholder="Email@gmail.com"
-          />
-          <br />
-          <label>Phone Number</label>
-          <Input
-            type="text"
-            className="form-info"
-            id="mobileNo"
-            name="mobileNo"
-            placeholder="073-XXXXXXX"
+            value= {emailAddress}
+            onChange= {(e) => setEmailAddress(e.target.value)}
           />
           <br />
           <label>Street Address</label>
-          <Input
+          <input
             type="text"
             className="form-info"
             id="address"
             name="address"
             placeholder="Address"
+            value= {address}
+            onChange= {(e)=> setAddress(e.target.value)}
           />
           <br />
           <label>Current Land</label>
           <select id="country">
-            <option value="">Choose...</option>
+            <option
+            >Choose...</option>
             <option>Sweden</option>
             <option>Finland</option>
             <option>Denmark</option>
@@ -71,7 +83,7 @@ function Checkout() {
           </select>
           <br />
           <label>Current City</label>
-          <Input
+          <input
             type="text"
             className="form-info"
             id="city"
@@ -80,7 +92,7 @@ function Checkout() {
           />
           <br />
           <label>Postal Code</label>
-          <Input
+          <input
             type="text"
             className="form-info"
             id="zip"

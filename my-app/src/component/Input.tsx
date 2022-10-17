@@ -1,7 +1,7 @@
 import React from "react";
-import { useState, useContext } from "react";
+import { useState } from "react";
 
-interface UserDetailsProps {
+interface UserDetails {
   id?: string;
   type: string;
   name: string;
@@ -10,20 +10,8 @@ interface UserDetailsProps {
   value?: string | number;
 }
 
-
-
-export const valueContext =  React.createContext("");
-
-export function useCart() {
-  return useContext(valueContext )
-}
-
-const Input = (props: UserDetailsProps) => {
+const Input = (props: UserDetails) => {
   const [value, setValue] = useState("");
-
-  const onChange = (e: React.ChangeEvent<HTMLInputElement>) =>
-  setValue(e.target.value)
-  
   return (
     <input
       id={props.id}
@@ -31,7 +19,9 @@ const Input = (props: UserDetailsProps) => {
       name={props.name}
       placeholder={props.placeholder}
       className={props.className}
-      onChange={onChange}
+      onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+        setValue(e.target.value)
+      }
       value={value}
       required
     />

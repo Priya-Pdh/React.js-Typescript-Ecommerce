@@ -2,7 +2,7 @@
     text-align: center;
   }
   .thankyou-container {
-    margin: 5%
+    margin: 8% 5% 5% 5%
   }
   
   .thankyou-heading {
@@ -10,5 +10,43 @@
    
   }
   
+  .U_Name {
+    font-size: 30px;
+  }
+
+  .details-div {
+    color: rgb(82, 60, 47);
+    font-weight: 900;
+    line-height: 1.5rem;
+  }
+
+
+
+  /* for ipad */
   
+  @media only screen and (min-device-width: 820px) and (max-device-width: 1024px) {
+    
+    
+    .U_Name {
+      font-size: 15px;
+    }
   
+    
+  }
+
+  /* for mobile*/
+  @media only screen 
+  and (min-device-width: 360px) 
+    and (max-device-width: 819px)
+  {
+
+    .U_Name {
+      font-size: 12px;
+    }
+  
+    .details-div {
+      line-height: 1rem;
+    }
+
+
+   }

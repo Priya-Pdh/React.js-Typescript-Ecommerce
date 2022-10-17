@@ -4,8 +4,9 @@ type UserProviderProps = {
     children: React.ReactNode
 }
 export type UserContextProps = {
-    user: string
+    user: string;
     setUser:React.Dispatch<React.SetStateAction<string>>;
+
 }
 
 
@@ -25,7 +26,7 @@ export function UserProvider( {children}: UserProviderProps) {
         <UserContext.Provider
         value= {{
             user,
-            setUser
+            setUser,
         }}
         >
             {children}

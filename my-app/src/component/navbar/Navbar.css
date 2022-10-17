@@ -20,11 +20,13 @@
    
   }
   
-  .navbar-list,
+  .navbar-list, 
   li:last-child {
     padding-right: 20px;
-  
+    
   }
+  
+
   
   /* for ipad */
   
@@ -34,7 +36,7 @@
     .navbar-wrapper {
       font-size: 20px;
     }
-  
+    
     
   }
   
@@ -52,5 +54,6 @@
     
     height: 20px;
   }
+  
   
   }

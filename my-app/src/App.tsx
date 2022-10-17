@@ -14,6 +14,7 @@ import CareForClothes from "./pages/CareForClothes";
 import { CartProvider } from "./component/context/CartContext";
 import Cart from "./component/cart/Cart";
 import { UserProvider } from "./component/context/UserContext";
+import { PersonalDetailsProvider } from "./component/context/PersonalDetailsContext";
 
 function App() {
  
@@ -22,7 +23,9 @@ function App() {
      
       <div className="App">
      <CartProvider>
+     <PersonalDetailsProvider>
       <UserProvider>
+      
         <Router>
           <div>
             <Routes>
@@ -45,7 +48,9 @@ function App() {
             </Routes>
           </div>
         </Router>
+       
         </UserProvider>
+        </PersonalDetailsProvider> 
         </CartProvider>
       </div>
     </>

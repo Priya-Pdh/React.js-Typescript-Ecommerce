@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useUserContext } from "../component/context/UserContext"
 import { FaShopify } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 import Input from "../component/Input";
@@ -34,7 +34,6 @@ function Login() {
             <li>About us</li>
             <li>Contact us</li>
             <li>Login</li>
-            <li>Signup</li>
           </ul>
         </nav>
       </div>
@@ -48,7 +47,7 @@ function Login() {
             name="name"
             placeholder="Full Name"
             id="name"
-            className="U_Name"
+            className="U_Name_Login"
             value= {loginName}
             onChange= {(e) => setLoginName(e.target.value)}
           />
@@ -60,19 +59,12 @@ function Login() {
             name="password"
             placeholder="password"
             id=""
-            className="U_password"
+            className="U_password_Login"
           />
-          <br></br>
-          <div>
-            <span>
-              Don't have an account?
-              <Link to="/Signup" className="link">
-                Signup Here
-              </Link>
-            </span>
+          <br/>
             <br />
-            <button onClick={onClick} style = { {width: "50px", height: "20px"}}>Login </button>
-          </div>
+            <button onClick={onClick}  className="login-button" >Login </button>
+          
         </form>
       </div>
     </>
