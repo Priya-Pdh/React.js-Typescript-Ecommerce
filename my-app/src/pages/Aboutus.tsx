@@ -61,18 +61,6 @@ function Aboutus() {
                ecosystem of inclusive entrepreneurship, innovation, and growth.
              </section>
              <br />
-             <br />
-             <button
-               className="green-button"
-               onClick={() =>
-                 window.open(
-                   "https://cdn.shopify.com/static/sustainability-report/2021%20Shopify%20Sustainability%20Report.pdf"
-                 )
-               }
-             >
-               LATEST SUSTAINABLITY REPORT
-            </button>
-             <br />
               <button className="green-button" onClick={handleClothingHacks}>
                TAKE CARE OF YOU CLOTHES <FaRecycle />
              </button>

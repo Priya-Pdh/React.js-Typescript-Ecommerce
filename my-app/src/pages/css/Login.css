@@ -33,13 +33,13 @@
       font-size: 20px;
   }
   
-  #email {
+  .U_Name {
       width: 200px;
       height: 30px;
       font-size: 15px;
       margin-top: 25px;
   }
-  #password {
+  .U_password {
       width: 200px;
       height: 30px;
       margin: 10px;

@@ -1,9 +1,11 @@
 import React from "react";
+import { useUserContext } from "../component/context/UserContext";
 import Footer from "../component/footer/Footer";
 import NavBar from "../component/navbar/Navbar";
 import "./css/Homepage.css";
 
 function Homepage() {
+  const { user }= useUserContext();
   return (
     <>
       <NavBar />
@@ -13,6 +15,7 @@ function Homepage() {
             <p className="welcome-para">
               <b>WELCOME TO SHOPPERS</b>
             </p>
+            <p className="userName"><strong>{user}</strong></p>
             <p> Making commerce better for everyone</p>
             <p>
               We help people achieve independence by making it easier to start,

@@ -3,17 +3,17 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import Aboutus from "./pages/Aboutus";
 import Login from "./pages/Login";
-import Signup from "./pages/Signup";
 
 import Thankyou from "./pages/Thankyou";
 import Products from "./pages/Products";
 import Homepage from "./pages/Homepage";
-import Contactus from "./pages/Contactus";
+// import Contactus from "./pages/Contactus";
 
 import Checkout from "./pages/Checkout";
 import CareForClothes from "./pages/CareForClothes";
 import { CartProvider } from "./component/context/CartContext";
 import Cart from "./component/cart/Cart";
+import { UserProvider } from "./component/context/UserContext";
 
 function App() {
  
@@ -22,11 +22,12 @@ function App() {
      
       <div className="App">
      <CartProvider>
+      <UserProvider>
         <Router>
           <div>
             <Routes>
               <Route path="/" element={<Login />} />
-              <Route path="/Signup" element={<Signup />} />
+             
 
               <Route path="/Homepage" element={<Homepage />} />
               <Route path="/Aboutus" element={<Aboutus />} />
@@ -36,14 +37,15 @@ function App() {
 
               <Route path="/CareForClothes" element={<CareForClothes/>} />
 
-              <Route path="/Contactus" element={<Contactus
+              {/* <Route path="/Contactus" element={<Contactus
              
-              />} />
+              />} /> */}
               <Route path="/Checkout" element={<Checkout />} />
               <Route path="/Thankyou" element={<Thankyou />} />
             </Routes>
           </div>
         </Router>
+        </UserProvider>
         </CartProvider>
       </div>
     </>

@@ -14,6 +14,12 @@
     padding: 1%;
     
   }
+
+.userName {
+  font-size: 20px;
+  color: rgb(82, 60, 47);
+  
+}
   .img-section {
     width: 60%;
   }

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useUserContext } from "../component/context/UserContext"
 import { FaShopify } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -8,13 +9,18 @@ import Input from "../component/Input";
 import "./css/Login.css";
 
 function Login() {
+  const { setUser } = useUserContext()
+ const [ loginName, setLoginName ] = useState("");
+
   const navigate = useNavigate();
 
-  const handleLogin = (e: React.SyntheticEvent) => {
-    e.preventDefault();
-    navigate("/Homepage");
-  };
-
+  const onClick = (e:React.SyntheticEvent)=> {
+    setUser(loginName) ;
+    if (Input.length !== 0) return(
+      navigate("/Homepage")
+    )
+    
+  }
   return (
     <>
       <div className="navbar-container-login">
@@ -33,25 +39,28 @@ function Login() {
         </nav>
       </div>
       <div className="body-container-login">
-        <form className="login-form" autoComplete="off" onSubmit={handleLogin}>
+        <form className="login-form" autoComplete="off" >
           <h1 className="login-heading">LOGIN</h1>
           <hr></hr>
-          <label>E- Address</label>
-          <Input
-            type="email"
-            name="Email"
-            placeholder="email@gmail.com"
-            id="email"
-            className=""
+          <label>Full Name</label>
+          <input
+            type="name"
+            name="name"
+            placeholder="Full Name"
+            id="name"
+            className="U_Name"
+            value= {loginName}
+            onChange= {(e) => setLoginName(e.target.value)}
           />
+         
           <br></br>
           <label>Password</label>
-          <Input
+          <input
             type="password"
             name="password"
             placeholder="password"
-            id="password"
-            className=""
+            id=""
+            className="U_password"
           />
           <br></br>
           <div>
@@ -62,8 +71,7 @@ function Login() {
               </Link>
             </span>
             <br />
-
-            <button className="login-button">Login</button>
+            <button onClick={onClick} style = { {width: "50px", height: "20px"}}>Login </button>
           </div>
         </form>
       </div>
