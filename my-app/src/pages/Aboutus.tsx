@@ -1,5 +1,5 @@
 import "./css/Aboutus.css";
-import Values from "../component/Values";
+import Values from "../component/values/Values";
 import NavBar from "../component/navbar/Navbar";
 import Footer from "../component/footer/Footer";
 import { useNavigate } from "react-router-dom";
