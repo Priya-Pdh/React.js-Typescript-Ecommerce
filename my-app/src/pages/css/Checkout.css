@@ -1,125 +1,122 @@
 #order-container {
-    margin: 0 300px 0 300px;
-    padding: 20px 0 20px 0;
-    background-color: rgb(224, 214, 203);
+  margin: 0 300px 0 300px;
+  padding: 20px 0 20px 0;
+  background-color: rgb(224, 214, 203);
+}
+
+#Personal-info {
+  margin-bottom: 20px;
+}
+#zip {
+  margin-bottom: 20px;
+}
+#cvv-number {
+  margin-bottom: 20px;
+}
+label {
+  font-size: 15px;
+}
+
+.form-info {
+  width: 450px;
+  height: 40px;
+  margin: 10px;
+}
+
+#country {
+  width: 450px;
+  height: 40px;
+  margin: 10px;
+}
+.control-input {
+  width: 20px;
+}
+.payment-info {
+  font-size: 15px;
+}
+
+.payment-heading {
+  margin: 10px;
+}
+.payment-button {
+  width: 150px;
+  height: 40px;
+  background-color: rgb(115, 148, 132) !important;
+}
+.payment-button:hover {
+  background-color: rgb(243, 243, 243) !important;
+  color: black;
+}
+
+/* for iPad*/
+@media only screen and (min-device-width: 820px) and (max-device-width: 1024px) {
+  .personal-info {
+    font-size: 15px;
   }
-  
-  #Personal-info {
-    margin-bottom: 20px;
+  #order-container {
+    margin: 0 100px 0 100px;
   }
-  #zip {
-    margin-bottom: 20px;
-  }
-  #cvv-number {
-    margin-bottom: 20px;
+
+  input {
+    width: 250px;
+    height: 20px;
+    margin: 10px;
+    font-size: 10px;
   }
   label {
-    font-size: 15px;
+    font-size: 10px;
   }
-  
-  .form-info {
-    width: 450px;
-    height: 40px;
-    margin: 10px;
-  }
-  
   #country {
-    width: 450px;
-    height: 40px;
-    margin: 10px;
+    font-size: 10px;
   }
   .control-input {
-    width: 20px;
+    width: 15px;
   }
   .payment-info {
-    font-size: 15px;
+    font-size: 10px;
   }
-  
+
   .payment-heading {
     margin: 10px;
+    font-size: 10px;
   }
   .payment-button {
-    width: 150px;
-    height: 40px;
-    background-color: rgb(115, 148, 132) !important;
+    width: 100px;
+    height: 30px;
   }
-  .payment-button:hover {
-    background-color: rgb(243, 243, 243) !important;
-    color: black;
+}
+
+/* for mobile*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 819px) {
+  .personal-info {
+    font-size: 15px;
   }
-  
-  /* for iPad*/
-  @media only screen and (min-device-width: 820px) and (max-device-width: 1024px) {
-    .personal-info {
-      font-size: 15px;
-    }
-    #order-container {
-      margin: 0 100px 0 100px;
-    }
-  
-    input {
-      width: 250px;
-      height: 20px;
-      margin: 10px;
-      font-size: 10px;
-    }
-    label {
-      font-size: 10px;
-    }
-    #country {
-      font-size: 10px;
-    }
-    .control-input {
-      width: 15px;
-    }
-    .payment-info {
-      font-size: 10px;
-    }
-  
-    .payment-heading {
-      margin: 10px;
-      font-size: 10px;
-    }
-    .payment-button {
-      width: 100px;
-      height: 30px;
-    }
+  #order-container {
+    margin: auto;
   }
-  
-  /* for mobile*/
-  @media only screen and (min-device-width: 320px) and (max-device-width: 819px) {
-    .personal-info {
-      font-size: 15px;
-    }
-    #order-container {
-      margin: auto;
-    }
-    .form-info {
-      width: 250px;
-      height: 20px;
-      margin: 10px;
-      font-size: 10px;
-    }
-    label {
-      font-size: 8px;
-    }
-    #country {
-      width: 250px;
-      height: 23px;
-      margin: 10px;
-      font-size: 10px;
-    }
-    .control-input {
-      width: 15px;
-      
-    }
-    .payment-info {
-      font-size: 10px;
-    }
-    .payment-button {
-      width: 100px;
-      height: 30px;
-    }
-    
+  .form-info {
+    width: 250px;
+    height: 20px;
+    margin: 10px;
+    font-size: 10px;
   }
-  
+  label {
+    font-size: 8px;
+  }
+  #country {
+    width: 250px;
+    height: 23px;
+    margin: 10px;
+    font-size: 10px;
+  }
+  .control-input {
+    width: 15px;
+  }
+  .payment-info {
+    font-size: 10px;
+  }
+  .payment-button {
+    width: 100px;
+    height: 30px;
+  }
+}

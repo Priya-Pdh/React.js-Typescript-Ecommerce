@@ -2,7 +2,6 @@ import "./Feedback.css";
 import React, { useState } from "react";
 import StarRating from "../starrating/StarRating";
 
-
 type ReviewProps = {
   id: number;
   description: string;
@@ -49,7 +48,9 @@ function FeedBack() {
 
   return (
     <div id="feedback-container">
-      <h2 className="feedback-heading">Please provide feedback regarding shopping experience.</h2>
+      <h2 className="feedback-heading">
+        Please provide feedback regarding shopping experience.
+      </h2>
       <p>Your Feedbacks are valuable</p>
       <form onSubmit={handleFormSubmit}>
         <div className="input-area">
@@ -61,11 +62,13 @@ function FeedBack() {
             value={description}
             onChange={handleInput}
           />
-          
+
           <br />
           <br />
           <div id="btn-container">
-            <button type="submit" className="feedback-button">Add Feedback</button>
+            <button type="submit" className="feedback-button">
+              Add Feedback
+            </button>
           </div>
         </div>
       </form>
@@ -74,12 +77,17 @@ function FeedBack() {
           <div id="list-conatiner">
             <li key={review.id}>
               {review.description}
-              <button className="feedback-button" onClick={() => handleDelete(review.id)} >Remove</button>
+              <button
+                className="feedback-button"
+                onClick={() => handleDelete(review.id)}
+              >
+                Remove
+              </button>
             </li>
           </div>
         ))}
       </ul>
-      <br/>
+      <br />
       <StarRating />
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { useCart } from  "../context/CartContext";
+import { useCart } from "../context/CartContext";
 
 import CartItem from "./CartItems";
 import "./Cart.css";
@@ -9,11 +9,8 @@ import { productsProps } from "../../pages/Products";
 import { useNavigate } from "react-router-dom";
 import StarRating from "../starrating/StarRating";
 
-
-
 export default function Cart() {
-  const { cartItems } = useCart()
-  
+  const { cartItems } = useCart();
 
   const calculateTotal = (items: productsProps[]) => {
     return items.reduce(
@@ -37,28 +34,23 @@ export default function Cart() {
         <div className="cart-container">
           {cartItems.length === 0 ? <p>No items in cart.</p> : null}
           {cartItems.map((item: productsProps) => (
-            <CartItem
-              key={item.id}
-              item={item}
-              
-            />
+            <CartItem key={item.id} item={item} />
           ))}
         </div>
-        
+
         <div className="total">
           <p>Total: {calculateTotal(cartItems)}</p>
         </div>
 
         <div className="checkout-conatiner">
           <div className="starRationContainer">
-          <StarRating/>
+            <StarRating />
           </div>
-        
+
           <button id="checkout-button" onClick={handleCheckout}>
             Checkout
           </button>
         </div>
-       
       </div>
     </>
   );

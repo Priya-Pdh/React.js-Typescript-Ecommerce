@@ -1,14 +1,13 @@
-import { useCart } from  "../context/CartContext";
-import { productsProps } from "../../pages/Products"
+import { useCart } from "../context/CartContext";
+import { productsProps } from "../../pages/Products";
 import "./CartItems.css";
 
 type CartItemsProps = {
   item: productsProps;
- 
 };
 
 export default function CartItem(props: CartItemsProps) {
-  const { handleAddToCart, handleRemoveFromCart } = useCart()
+  const { handleAddToCart, handleRemoveFromCart } = useCart();
   return (
     <>
       <div>
@@ -33,7 +32,6 @@ export default function CartItem(props: CartItemsProps) {
           >
             Remove
           </button>
-          
         </div>
       </div>
     </>

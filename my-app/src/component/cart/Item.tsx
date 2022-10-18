@@ -1,6 +1,6 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"
-import { useCart } from "../context/CartContext"
+import { useNavigate } from "react-router-dom";
+import { useCart } from "../context/CartContext";
 
 //Types
 import { productsProps } from "../../pages/Products";
@@ -14,23 +14,22 @@ interface ItemProps {
 }
 
 export default function Item(props: ItemProps) {
-  const {  handleAddToCart } = useCart()
-const navigate= useNavigate()
+  const { handleAddToCart } = useCart();
+  const navigate = useNavigate();
 
-  const handleClick = ( e:React.SyntheticEvent) => {
-    navigate("/ProductsDetails")
+  const handleClick = (e: React.SyntheticEvent) => {
+    navigate("/ProductsDetails");
   };
   return (
     <div className="products-container">
-
       <ul className="products-wrapper">
-        <div className="products-img-wrapper" key= {props.item.id}>
+        <div className="products-img-wrapper" key={props.item.id}>
           <img
             src={props.item.image}
             alt={props.item.title}
-            className="products-img" onClick={handleClick}
+            className="products-img"
+            onClick={handleClick}
           />
-         
         </div>
         <div className="list-container">
           <li key={props.item.id}>
@@ -41,7 +40,7 @@ const navigate= useNavigate()
             {formatCurrency(props.item.price)}
           </li>
           <li>{props.item.description}</li>
-         
+
           <button
             className="add-button"
             onClick={() => handleAddToCart(props.item)}

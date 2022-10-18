@@ -6,26 +6,23 @@ import NavBar from "../component/navbar/Navbar";
 import Footer from "../component/footer/Footer";
 import { usePersonalDetailsContext } from "../component/context/PersonalDetailsContext";
 
-
 function Checkout() {
   const { setName } = usePersonalDetailsContext();
-  const {  setStreetAddress } = usePersonalDetailsContext();
+  const { setStreetAddress } = usePersonalDetailsContext();
   const { setEmail } = usePersonalDetailsContext();
-  
-  const [fullName, setFullName]= useState("");
-  const [emailAddress, setEmailAddress]= useState("");
-  const [address, setAddress] = useState("");
-  
-  
-  const navigate = useNavigate();
 
+  const [fullName, setFullName] = useState("");
+  const [emailAddress, setEmailAddress] = useState("");
+  const [address, setAddress] = useState("");
+
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     setName(fullName);
     setStreetAddress(address);
-    setEmail(emailAddress); 
-   
+    setEmail(emailAddress);
+
     navigate("/Thankyou");
   };
 
@@ -46,8 +43,8 @@ function Checkout() {
             id="fullName"
             name="fullName"
             placeholder="Full Name"
-            value= {fullName}
-            onChange= {(e) => setFullName(e.target.value)}
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
           />
           <br />
           <label>Email Address </label>
@@ -57,8 +54,8 @@ function Checkout() {
             id="checkout-email"
             name="email"
             placeholder="Email@gmail.com"
-            value= {emailAddress}
-            onChange= {(e) => setEmailAddress(e.target.value)}
+            value={emailAddress}
+            onChange={(e) => setEmailAddress(e.target.value)}
           />
           <br />
           <label>Street Address</label>
@@ -68,14 +65,13 @@ function Checkout() {
             id="address"
             name="address"
             placeholder="Address"
-            value= {address}
-            onChange= {(e)=> setAddress(e.target.value)}
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
           />
           <br />
           <label>Current Land</label>
           <select id="country">
-            <option
-            >Choose...</option>
+            <option>Choose...</option>
             <option>Sweden</option>
             <option>Finland</option>
             <option>Denmark</option>

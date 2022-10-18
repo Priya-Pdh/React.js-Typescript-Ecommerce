@@ -1,26 +1,20 @@
 import React, { useState } from "react";
-import { useUserContext } from "../component/context/UserContext"
+import { useUserContext } from "../component/context/UserContext";
 import { FaShopify } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-
-
-import Input from "../component/Input";
 
 import "./css/Login.css";
 
 function Login() {
-  const { setUser } = useUserContext()
- const [ loginName, setLoginName ] = useState("");
+  const { setUser } = useUserContext();
+  const [loginName, setLoginName] = useState("");
 
   const navigate = useNavigate();
 
-  const onClick = (e:React.SyntheticEvent)=> {
-    setUser(loginName) ;
-    if (Input.length !== 0) return(
-      navigate("/Homepage")
-    )
-    
-  }
+  const onClick = (e: React.SyntheticEvent) => {
+    setUser(loginName);
+    if (loginName.length !== 0) return navigate("/Homepage");
+  };
   return (
     <>
       <div className="navbar-container-login">
@@ -38,7 +32,7 @@ function Login() {
         </nav>
       </div>
       <div className="body-container-login">
-        <form className="login-form" autoComplete="off" >
+        <form className="login-form" autoComplete="off">
           <h1 className="login-heading">LOGIN</h1>
           <hr></hr>
           <label>Full Name</label>
@@ -48,10 +42,10 @@ function Login() {
             placeholder="Full Name"
             id="name"
             className="U_Name_Login"
-            value= {loginName}
-            onChange= {(e) => setLoginName(e.target.value)}
+            value={loginName}
+            onChange={(e) => setLoginName(e.target.value)}
           />
-         
+
           <br></br>
           <label>Password</label>
           <input
@@ -61,10 +55,11 @@ function Login() {
             id=""
             className="U_password_Login"
           />
-          <br/>
-            <br />
-            <button onClick={onClick}  className="login-button" >Login </button>
-          
+          <br />
+          <br />
+          <button onClick={onClick} className="login-button">
+            Login{" "}
+          </button>
         </form>
       </div>
     </>

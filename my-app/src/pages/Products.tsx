@@ -5,7 +5,6 @@ import "./css/Products.css";
 import Item from "../component/cart/Item";
 import Footer from "../component/footer/Footer";
 
-
 export interface productsProps {
   id: number;
   image?: string;
@@ -14,7 +13,6 @@ export interface productsProps {
   group: string;
   amount: number;
   description: string;
-
 }
 
 export const DataContext = createContext<Array<productsProps>>([]);
@@ -24,12 +22,10 @@ export default function Products() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
-
   const [isFiltered, setIsFiltered] = useState(false);
   const [filteredResult, setfilteredResult] = useState<Array<productsProps>>(
     []
   );
-
 
   useEffect(() => {
     const fetchData = async () => {
@@ -89,9 +85,7 @@ export default function Products() {
         <Item key={items.id} item={items} />
       ));
     } else {
-      return data.map((items) => (
-        <Item key={items.id} item={items} />
-      ));
+      return data.map((items) => <Item key={items.id} item={items} />);
     }
   };
 
@@ -99,7 +93,6 @@ export default function Products() {
     <>
       <NavBar />
       <div className="main-products-container">
-
         {/* Products container */}
         <h1 className="text-center">LET'S SHOP</h1>
         <h2 className="category-title">CATEGORY</h2>
@@ -135,8 +128,6 @@ export default function Products() {
           <div className="products-container">{productContent()}</div>
         </div>
       </div>
-
-
 
       <Footer />
     </>

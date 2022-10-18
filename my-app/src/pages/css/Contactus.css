@@ -1,59 +1,46 @@
 .conatactus-conatiner {
-   margin: 3%;
+  margin: 3%;
 }
- 
+
 .heading-FAQ {
-   color: rgb(82, 60, 47);
-   margin-bottom: 1%;
+  color: rgb(82, 60, 47);
+  margin-bottom: 1%;
 }
 .questions-container {
-   color: rgb(201, 138, 104);
-   line-height: 2rem;
+  color: rgb(201, 138, 104);
+  line-height: 2rem;
 }
- 
+
 .answers-container {
-   color: rgb(82, 60, 47);
-   margin-bottom: 1%;
- 
+  color: rgb(82, 60, 47);
+  margin-bottom: 1%;
 }
 .contact-para {
-   color: rgb(201, 138, 104);
+  color: rgb(201, 138, 104);
 }
 
 .comDetailButton {
-     
-   margin: 2%;
+  margin: 2%;
 }
 
- /* for iPad*/
- @media only screen 
- and (min-device-width: 820px) 
-   and (max-device-width: 1024px) 
- { 
-   
-   #infoContactPara {
-    
-     font-size: 15px;
-   }
-   .comDetailButton {
-     
-      margin: 2%;
-   }
- }
- 
+/* for iPad*/
+@media only screen and (min-device-width: 820px) and (max-device-width: 1024px) {
+  #infoContactPara {
+    font-size: 15px;
+  }
+  .comDetailButton {
+    margin: 2%;
+  }
+}
 
-
- /* for mobile*/
- @media only screen 
- and (min-device-width: 360px) 
-   and (max-device-width: 819px)
- { 
-   .questions-answers-container {
-       font-size: 10px;
-       line-height: 0.75rem;
-   }
-   .comDetailButton {
-      font-size: 10px;
-      margin: 2%;
-   }
-  } 
+/* for mobile*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 819px) {
+  .questions-answers-container {
+    font-size: 10px;
+    line-height: 0.75rem;
+  }
+  .comDetailButton {
+    font-size: 10px;
+    margin: 2%;
+  }
+}
