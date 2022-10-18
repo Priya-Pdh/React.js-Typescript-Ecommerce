@@ -5,6 +5,7 @@ import "./css/Products.css";
 import Item from "../component/cart/Item";
 import Footer from "../component/footer/Footer";
 
+
 export interface productsProps {
   id: number;
   image?: string;
@@ -13,19 +14,22 @@ export interface productsProps {
   group: string;
   amount: number;
   description: string;
+
 }
 
-export const CartItemsContext = createContext([] as productsProps[]);
+export const DataContext = createContext<Array<productsProps>>([]);
 
 export default function Products() {
   const [data, setData] = useState<Array<productsProps>>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
+
   const [isFiltered, setIsFiltered] = useState(false);
   const [filteredResult, setfilteredResult] = useState<Array<productsProps>>(
     []
   );
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -45,11 +49,11 @@ export default function Products() {
     };
 
     fetchData();
-  }, [filteredResult]);
+  }, []);
 
   if (loading) {
     return (
-      <div className="App">
+      <div className="productLoading">
         <p>Loading...</p>
       </div>
     );
@@ -57,7 +61,7 @@ export default function Products() {
 
   if (error) {
     return (
-      <div className="App">
+      <div className="ErrorFetching">
         <p>Error fetching data!!</p>
       </div>
     );
@@ -131,6 +135,8 @@ export default function Products() {
           <div className="products-container">{productContent()}</div>
         </div>
       </div>
+
+
 
       <Footer />
     </>

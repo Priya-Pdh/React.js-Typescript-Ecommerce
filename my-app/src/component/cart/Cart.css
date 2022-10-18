@@ -27,6 +27,12 @@
   #checkout-button:hover {
     background-color: rgb(201, 138, 104);;
   }
+
+  .starRationContainer{
+    width: 40%;
+    margin: 2% 0 2% 30%;
+
+  }
   /* for iPad*/
   @media only screen 
   and (min-device-width: 768px) 

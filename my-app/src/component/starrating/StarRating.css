@@ -9,7 +9,6 @@
   }
    .star {
     cursor: pointer;
-    transition: color 200ms;
     width: 20%;
   }
   .star-rating-radio {

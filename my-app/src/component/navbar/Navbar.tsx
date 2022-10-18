@@ -43,7 +43,7 @@ function NavBar() {
             </li>
             <li className="navbar-list"> 
               <Link to="/">
-                Login
+                Logout
               </Link>
             </li>
             <li className="navbar-list">

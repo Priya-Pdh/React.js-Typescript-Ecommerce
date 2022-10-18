@@ -13,6 +13,7 @@ export type CartContextProps = {
   handleAddToCart: (clickedItem: productsProps) => void;
   handleRemoveFromCart: (id: number) => void;
  getTotalItems: (items: productsProps[]) => number;
+ 
 }
 
 
@@ -73,7 +74,7 @@ export function useCart() {
          handleAddToCart,
          handleRemoveFromCart,
          getTotalItems,
-
+         
        }}
      >
        {children}

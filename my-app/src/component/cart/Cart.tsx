@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useCart } from  "../context/CartContext";
 
 import CartItem from "./CartItems";
@@ -7,6 +7,7 @@ import "./Cart.css";
 //Types
 import { productsProps } from "../../pages/Products";
 import { useNavigate } from "react-router-dom";
+import StarRating from "../starrating/StarRating";
 
 
 
@@ -43,15 +44,21 @@ export default function Cart() {
             />
           ))}
         </div>
+        
         <div className="total">
           <p>Total: {calculateTotal(cartItems)}</p>
         </div>
 
         <div className="checkout-conatiner">
+          <div className="starRationContainer">
+          <StarRating/>
+          </div>
+        
           <button id="checkout-button" onClick={handleCheckout}>
             Checkout
           </button>
         </div>
+       
       </div>
     </>
   );

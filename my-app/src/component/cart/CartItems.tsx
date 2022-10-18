@@ -1,4 +1,3 @@
-import React from "react";
 import { useCart } from  "../context/CartContext";
 import { productsProps } from "../../pages/Products"
 import "./CartItems.css";
@@ -34,6 +33,7 @@ export default function CartItem(props: CartItemsProps) {
           >
             Remove
           </button>
+          
         </div>
       </div>
     </>
