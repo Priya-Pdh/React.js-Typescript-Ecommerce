@@ -45,6 +45,7 @@ function Checkout() {
             placeholder="Full Name"
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
+            required
           />
           <br />
           <label>Email Address </label>
@@ -56,6 +57,7 @@ function Checkout() {
             placeholder="Email@gmail.com"
             value={emailAddress}
             onChange={(e) => setEmailAddress(e.target.value)}
+            required
           />
           <br />
           <label>Street Address</label>
@@ -67,6 +69,7 @@ function Checkout() {
             placeholder="Address"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
+            required
           />
           <br />
           <label>Current Land</label>
@@ -85,6 +88,7 @@ function Checkout() {
             id="city"
             name="city"
             placeholder="City"
+            required
           />
           <br />
           <label>Postal Code</label>
@@ -94,6 +98,7 @@ function Checkout() {
             id="zip"
             name="zip"
             placeholder="Postal Code"
+            required
           />
           <br />
 
