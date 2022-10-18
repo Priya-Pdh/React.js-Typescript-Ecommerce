@@ -1,12 +1,14 @@
 .main-cart-container {
-  background-color: rgb(224, 214, 203);
   height: 100vh;
+  padding: 5% 5% 0 5%;
 }
 
 .cart-container {
   display: flex;
   justify-content: center;
   gap: 20px;
+  border: 1px solid black;
+  background-color: rgb(243, 243, 243);
 }
 .total {
   background-color: rgb(115, 148, 132);

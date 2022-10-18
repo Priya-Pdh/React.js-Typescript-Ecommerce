@@ -53,6 +53,13 @@
   margin-top: 30px;
 }
 
+#nameLogin {
+  margin-right: 2%;
+}
+#passwordLogin {
+  margin-left: 4%
+}
+
 /* for iPad*/
 @media only screen and (min-device-width: 820px) and (max-device-width: 1024px) {
   .navbar-container-login {
@@ -63,6 +70,12 @@
   }
   .login-form {
     height: 380px;
+  }
+  #nameLogin {
+    margin-right: 0.5%;
+  }
+  #passwordLogin {
+    margin-left: 1%
   }
 }
 /* for mobile*/
@@ -75,5 +88,15 @@
   }
   .login-form {
     width: 250px;
+  }
+  .U_Name_Login {
+    font-size: 10px;
+    width: 170px;
+   
+  }
+  .U_password_Login {
+    font-size: 10px;
+    width: 170px;
+    
   }
 }

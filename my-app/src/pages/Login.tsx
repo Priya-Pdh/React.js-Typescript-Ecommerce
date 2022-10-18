@@ -35,7 +35,7 @@ function Login() {
         <form className="login-form" autoComplete="off">
           <h1 className="login-heading">LOGIN</h1>
           <hr></hr>
-          <label>Full Name</label>
+          <label id="nameLogin">Full Name </label>
           <input
             type="name"
             name="name"
@@ -47,11 +47,11 @@ function Login() {
           />
 
           <br></br>
-          <label>Password</label>
+          <label id="passwordLogin">Password</label>
           <input
             type="password"
             name="password"
-            placeholder="password"
+            placeholder="Password"
             id=""
             className="U_password_Login"
           />

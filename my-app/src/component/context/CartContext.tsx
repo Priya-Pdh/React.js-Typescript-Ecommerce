@@ -11,6 +11,7 @@ export type CartContextProps = {
   handleAddToCart: (clickedItem: productsProps) => void;
   handleRemoveFromCart: (id: number) => void;
   getTotalItems: (items: productsProps[]) => number;
+  
 };
 
 export const CartContext = React.createContext({} as CartContextProps);
@@ -67,6 +68,7 @@ export function CartProvider({ children }: CartProviderProps) {
         handleAddToCart,
         handleRemoveFromCart,
         getTotalItems,
+        
       }}
     >
       {children}
