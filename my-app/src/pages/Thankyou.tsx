@@ -13,7 +13,7 @@ function Thankyou() {
       <NavBar />
       <div className="thankyou-container">
         <h1 className="thankyou-heading">
-          Thank <span className="U_Name">{name}</span> your for your order!!
+          Thank <span className="U_Name">{name}</span> for your order!!
         </h1>
         <p>Your order has been received</p>
         <br />
