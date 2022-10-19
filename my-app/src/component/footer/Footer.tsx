@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaRegCopyright, FaTwitter } from "react-icons/fa";
 
 function Footer() {
   const handleEmail = (e: React.SyntheticEvent) => {
@@ -45,6 +45,8 @@ function Footer() {
             <FaTwitter />
           </li>
         </ul>
+        <br/>
+        <p><FaRegCopyright/> 2022 Priya Pradhan</p>
       </div>
     </>
   );
