@@ -1,8 +1,10 @@
 .conatactus-conatiner {
-  margin: 3%;
+  margin: 3% 0 3% 20%;
   border: 1px solid rgb(243, 243, 243);
   border-radius: 50px;
   box-shadow: 7px 6px rgb(243, 243, 243);
+  width: 60%;
+  height: 60%;
 }
 
 .heading-FAQ {

@@ -18,6 +18,9 @@ function Aboutus() {
     <>
       <main id="AboutUs-Container">
         <NavBar />
+        <div className="marquee-text">
+          <p>*FEEL GOOD ABOUT FEELING GOOD*</p>
+        </div>
         <div className="welcome-img-wrapper">
           <section className="title">
             Shoppers powers millions of businesses worldwide. <br />

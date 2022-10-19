@@ -7,7 +7,7 @@ import "./Cart.css";
 //Types
 import { productsProps } from "../../pages/Products";
 import { useNavigate } from "react-router-dom";
-
+import { FaShoppingBag } from "react-icons/fa";
 
 export default function Cart() {
   const { cartItems } = useCart();
@@ -30,7 +30,9 @@ export default function Cart() {
   return (
     <>
       <div className="main-cart-container">
-        <h2>Your Shopping Cart Section</h2>
+        <h2>
+          Your Shopping Cart Section <FaShoppingBag />
+        </h2>
         <div className="cart-container">
           {cartItems.length === 0 ? <p>No items in cart.</p> : null}
           {cartItems.map((item: productsProps) => (
@@ -43,8 +45,7 @@ export default function Cart() {
         </div>
 
         <div className="checkout-conatiner">
-          <div className="starRationContainer">
-          </div>
+          <div className="starRationContainer"></div>
 
           <button id="checkout-button" onClick={handleCheckout}>
             Checkout

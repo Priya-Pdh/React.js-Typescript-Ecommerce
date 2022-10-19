@@ -15,9 +15,13 @@
   gap: 20px;
   padding-top: 0.5%;
 }
+.navbar-list li a {
+  color: rgb(82, 60, 47);
+}
 
 a:link {
   text-decoration: none !important;
+  
 }
 .navbar-list:hover {
   text-decoration: underline;

@@ -87,6 +87,36 @@
   margin: 2%;
   color: rgb(201, 138, 104);
 }
+.marquee-text {
+  background-color: white;
+  color: rgb(82, 60, 47);
+}
+
+.marquee-text {
+  position: absolute;
+  width: 43%;
+  height: 30px;
+  font-size: 20px;
+  overflow: hidden;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+.marquee-text p {
+  position: absolute;
+  text-align: center;
+  transform: translateX(100%);
+  animation: marquee-text 4s infinite;
+  background-color: white;
+}
+
+@keyframes marquee-text {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 
 /* for iPad*/
 @media only screen and (min-device-width: 820px) and (max-device-width: 1024px) {
@@ -99,6 +129,9 @@
   .green-button {
     width: 60%;
     height: 10%;
+  }
+  .marquee-text {
+    width: 25%;
   }
 }
 
@@ -129,5 +162,8 @@
   #last-section {
     margin-top: 20%;
     font-size: 10px;
+  }
+  .marquee-text {
+    width: 30%;
   }
 }

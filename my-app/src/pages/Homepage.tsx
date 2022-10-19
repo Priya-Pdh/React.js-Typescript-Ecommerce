@@ -12,9 +12,11 @@ function Homepage() {
 
       <div className="main-section-container">
         <div className="text-section">
+          <div className="h1-div">
           <p className="welcome-para">
             <b>WELCOME TO SHOPPERS</b>
           </p>
+          </div>
           <p className="userName">
             <strong>{user}</strong>
           </p>
@@ -26,9 +28,7 @@ function Homepage() {
             ownership to make commerce better for everyone.
           </p>
           <br />
-          <div className="marquee-text">
-            <p>*FEEL GOOD ABOUT FEELING GOOD*</p>
-          </div>
+          
         </div>
         <div className="img-section">
           <img src="images/img15.webp" alt="homepage-img" />

@@ -3,8 +3,6 @@
 }
 .thankyou-container {
   margin: 5% 5% 5% 5%;
-  
-  
 }
 .thankyou-details-container {
   border: 1px solid rgb(243, 243, 243);
@@ -24,7 +22,7 @@
 .details-div {
   color: rgb(82, 60, 47);
   font-weight: 900;
-  line-height: 1.rem;
+  line-height: 1rem;
 }
 
 /* for ipad */

@@ -25,42 +25,45 @@
   width: 100%;
   display: block;
 }
-.marquee-text {
-  background-color: rgb(224, 214, 203);
-  color: rgb(82, 60, 47);
-}
 
-.marquee-text {
+.welcome-para {
   position: relative;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 5%;
+  font-weight: bolder;
+}
+.welcome-para::before {
+  content: "WELCOME TO SHOPPERS";
   width: 100%;
-  height: 50px;
-  overflow: hidden;
-  margin-top: 50px;
-}
-
-.marquee-text p {
+  color: rgb(201, 138, 104);
   position: absolute;
-  text-align: center;
-  transform: translateX(100%);
-  animation: marquee-text 4s infinite;
+  top: 0;
+  bottom: 0.5rem;
+  left: 0;
+  border-right: 0.1rem solid rgb(201, 138, 104);
+  animation: slide 10s linear infinite;
+  -webkit-animation: slide 3s linear infinite;
+  overflow: hidden;
 }
-
-@keyframes marquee-text {
+@keyframes slide {
   0% {
-    transform: translateX(100%);
+    width: 0;
+  }
+  50% {
+    width: 100%;
   }
   100% {
-    transform: translateY(0%);
+    width: 0;
   }
 }
+
 /* for iPad*/
 @media only screen and (min-device-width: 820px) and (max-device-width: 1024px) {
   .text-section p {
     line-height: 1.5rem;
     font-size: 13px;
-    
   }
-  
 }
 
 /* for mobile*/
@@ -73,12 +76,15 @@
   }
   .userName {
     font-size: 12px;
-   
   }
   .img-section img {
     height: 100%;
   }
   .marquee-text {
     height: 40px;
+  }
+  .welcome-para {
+    font-size: 8px;
+    
   }
 }
