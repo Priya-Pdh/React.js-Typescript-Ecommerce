@@ -1,5 +1,6 @@
 .main-cart-container {
   height: 100vh;
+  width: 100wh;
   padding: 5% 5% 0 5%;
 }
 
@@ -9,11 +10,17 @@
   gap: 20px;
   border: 1px solid black;
   background-color: rgb(243, 243, 243);
+  margin-top: 2%;
+  padding: 5%;
+  border-radius: 30px;
 }
 .total {
   background-color: rgb(115, 148, 132);
   font-weight: bold;
+  font-size: 20px;
   margin-bottom: 10px;
+  border-radius: 40px;
+  height: 5%;
 }
 
 .checkout-conatiner {
@@ -21,9 +28,12 @@
   padding-bottom: 20px;
 }
 #checkout-button {
-  width: 10%;
+  width: 30%;
+  font-size: 20px;
   font-weight: bold;
+  border-radius: 20px;
   background-color: rgb(243, 243, 243);
+  font-family: 'Bodoni Moda', sans-serif;
 }
 #checkout-button:hover {
   background-color: rgb(201, 138, 104);
@@ -34,17 +44,21 @@
   margin: 2% 0 2% 30%;
 }
 /* for iPad*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 820px) and (max-device-width: 1024px) {
   h2,
   p {
     font-size: 12px;
   }
   #checkout-button {
-    font-size: 12px;
+    font-size: 15px;
+  }
+  .total {
+    font-size: 10px;
+    height: 3%;
   }
 }
 /* for mobile*/
-@media only screen and (min-device-width: 360px) and (max-device-width: 864px) {
+@media only screen and (min-device-width: 360px) and (max-device-width: 819px) {
   h2,
   p {
     font-size: 10px;
@@ -53,5 +67,15 @@
     font-size: 8px;
     margin-bottom: 5px;
     width: 12%;
+  }
+  .total {
+    border-radius: 10px;
+    height: 2%;
+  }
+  #checkout-button {
+    width: 35%;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 2%;
   }
 }

@@ -3,9 +3,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2%;
+  border: 1px solid rgb(243, 243, 243);
+  border-radius: 70px;
+  box-shadow: 8px 7px rgb(224, 214, 203);
 }
 .feedback-heading {
   color: rgb(201, 138, 104);
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 #feedback-input {
@@ -17,6 +23,10 @@
 #btn-container {
   display: flex;
   justify-content: flex-end;
+  
+}
+.feedback-button {
+  font-family: 'Bodoni Moda', sans-serif;
 }
 
 button:hover {
@@ -45,5 +55,9 @@ button:hover {
   #feedback-input {
     width: 170px;
     height: 50px;
+  }
+  #feedback-container {
+    border-radius: 50px;
+    box-shadow: 6px 5px rgb(224, 214, 203);
   }
 }

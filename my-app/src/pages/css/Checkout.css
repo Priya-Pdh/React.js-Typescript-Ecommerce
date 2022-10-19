@@ -1,32 +1,42 @@
 #order-container {
   margin: 0 300px 0 300px;
   padding: 20px 0 20px 0;
-  background-color: rgb(224, 214, 203);
+  background-color: rgb(243, 243, 243);
+  margin: 5% 10% 5% 10%;
+  border: 0.5px soild black;
+  
+}
+.Personal-Detail{
+  box-shadow: 20px;
+}
+.personal-info {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  
 }
 
-#Personal-info {
-  margin-bottom: 20px;
-}
-#zip {
-  margin-bottom: 20px;
-}
-#cvv-number {
-  margin-bottom: 20px;
-}
 label {
   font-size: 15px;
+  
 }
 
 .form-info {
-  width: 450px;
-  height: 40px;
+  width: 60%;
+  height: 30px;
   margin: 10px;
+  
 }
 
 #country {
-  width: 450px;
-  height: 40px;
+  width: 60%;
+  height: 35px;
   margin: 10px;
+}
+#fullName{
+  margin-right: 3%;
+}
+#checkout-email {
+  margin-right: 2%;
 }
 .control-input {
   width: 20px;
@@ -48,75 +58,39 @@ label {
   color: black;
 }
 
-/* for iPad*/
+ /* for iPad */
 @media only screen and (min-device-width: 820px) and (max-device-width: 1024px) {
-  .personal-info {
-    font-size: 15px;
-  }
-  #order-container {
-    margin: 0 100px 0 100px;
+  .personal-info, .payment-heading {
+    font-size: 20px;
   }
 
-  input {
-    width: 250px;
-    height: 20px;
-    margin: 10px;
-    font-size: 10px;
-  }
-  label {
-    font-size: 10px;
-  }
-  #country {
-    font-size: 10px;
-  }
-  .control-input {
-    width: 15px;
-  }
-  .payment-info {
-    font-size: 10px;
-  }
-
-  .payment-heading {
-    margin: 10px;
-    font-size: 10px;
-  }
-  .payment-button {
-    width: 100px;
-    height: 30px;
-  }
-}
+ 
+} 
 
 /* for mobile*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 819px) {
-  .personal-info {
-    font-size: 15px;
+ @media only screen and (min-device-width: 320px) and (max-device-width: 819px) {
+  .personal-info, .payment-heading {
+    font-size: 12px;
   }
-  #order-container {
-    margin: auto;
-  }
-  .form-info {
-    width: 250px;
-    height: 20px;
-    margin: 10px;
+  
+   .form-info {
+    width: 40%;
+    height: 15px;
     font-size: 10px;
-  }
+  } 
   label {
-    font-size: 8px;
+    font-size: 11px;
   }
   #country {
-    width: 250px;
-    height: 23px;
-    margin: 10px;
+    width: 40%;
+    height: 20px;
     font-size: 10px;
-  }
-  .control-input {
-    width: 15px;
   }
   .payment-info {
     font-size: 10px;
   }
   .payment-button {
-    width: 100px;
-    height: 30px;
+    width: 40%;
+    height: 25px;
   }
-}
+}  

@@ -58,7 +58,9 @@
   .text-section p {
     line-height: 1.5rem;
     font-size: 13px;
+    
   }
+  
 }
 
 /* for mobile*/
@@ -68,5 +70,15 @@
   }
   .text-section p {
     line-height: 1rem;
+  }
+  .userName {
+    font-size: 12px;
+   
+  }
+  .img-section img {
+    height: 100%;
+  }
+  .marquee-text {
+    height: 40px;
   }
 }

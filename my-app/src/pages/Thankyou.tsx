@@ -12,6 +12,7 @@ function Thankyou() {
     <>
       <NavBar />
       <div className="thankyou-container">
+        <div className="thankyou-details-container">
         <h1 className="thankyou-heading">
           Thank <span className="U_Name">{name}</span> for your order!!
         </h1>
@@ -24,6 +25,7 @@ function Thankyou() {
           <p>Full Name: {name}</p>
           <p>Email: {email}</p>
           <p>Address: {streetAddress}</p>
+        </div>
         </div>
         <br />
         <FeedBack />

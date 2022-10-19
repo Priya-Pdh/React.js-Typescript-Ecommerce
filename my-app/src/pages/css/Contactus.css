@@ -1,10 +1,13 @@
 .conatactus-conatiner {
   margin: 3%;
+  border: 1px solid rgb(243, 243, 243);
+  border-radius: 50px;
+  box-shadow: 7px 6px rgb(243, 243, 243);
 }
 
 .heading-FAQ {
   color: rgb(82, 60, 47);
-  margin-bottom: 1%;
+  margin: 2%;
 }
 .questions-container {
   color: rgb(201, 138, 104);
@@ -17,10 +20,14 @@
 }
 .contact-para {
   color: rgb(201, 138, 104);
+  margin: 2%;
 }
 
 .comDetailButton {
-  margin: 2%;
+  margin: 4%;
+  width: 20%;
+  font-family: 'Bodoni Moda', sans-serif;
+
 }
 
 /* for iPad*/
@@ -42,5 +49,6 @@
   .comDetailButton {
     font-size: 10px;
     margin: 2%;
+    width: 25%;
   }
 }

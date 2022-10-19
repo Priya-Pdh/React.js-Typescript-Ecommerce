@@ -7,7 +7,7 @@ import "./Cart.css";
 //Types
 import { productsProps } from "../../pages/Products";
 import { useNavigate } from "react-router-dom";
-import StarRating from "../starrating/StarRating";
+
 
 export default function Cart() {
   const { cartItems } = useCart();
@@ -44,7 +44,6 @@ export default function Cart() {
 
         <div className="checkout-conatiner">
           <div className="starRationContainer">
-            <StarRating />
           </div>
 
           <button id="checkout-button" onClick={handleCheckout}>
