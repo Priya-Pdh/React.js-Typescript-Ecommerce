@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 
 //Types
@@ -24,14 +24,12 @@ export default function Item(props: ItemProps) {
     <div className="products-container">
       <ul className="products-wrapper">
         <div className="products-img-wrapper" key={props.item.id}>
-          <Link to={`/Product/$(items.id)`}>
           <img
             src={props.item.image}
             alt={props.item.title}
             className="products-img"
             onClick={handleClick}
           />
-          </Link>
         </div>
         <div className="list-container">
           <li key={props.item.id}>

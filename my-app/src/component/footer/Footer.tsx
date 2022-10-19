@@ -31,7 +31,7 @@ function Footer() {
             id="email-input"
           />
           <br />
-          <button type="submit">Subscribe</button>
+          <button type="submit" id="subscribe-button">Subscribe</button>
         </form>
 
         <ul className="footer-icons">

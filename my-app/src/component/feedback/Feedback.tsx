@@ -88,7 +88,10 @@ function FeedBack() {
         ))}
       </ul>
       <br />
+      <br/>
       <StarRating />
+      <br/>
+      <br/>
     </div>
   );
 }

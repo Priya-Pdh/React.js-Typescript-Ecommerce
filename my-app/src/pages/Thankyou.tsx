@@ -28,6 +28,7 @@ function Thankyou() {
         </div>
         </div>
         <br />
+        <br/>
         <FeedBack />
       </div>
       <Footer />
