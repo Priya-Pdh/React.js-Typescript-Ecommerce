@@ -17,6 +17,17 @@
 .answers-container {
   color: rgb(82, 60, 47);
   margin-bottom: 1%;
+  display: none;
+  padding: 20px;
+}
+.drop-down-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4% 0 4%;
+}
+.questions-container:hover + .answers-container {
+  display: block;
+  cursor:pointer;
 }
 .contact-para {
   color: rgb(201, 138, 104);

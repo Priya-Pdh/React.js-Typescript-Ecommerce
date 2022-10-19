@@ -4,6 +4,7 @@ import NavBar from "../component/navbar/Navbar";
 
 import DATA from "../component/data/FAQ.json";
 import "./css/Contactus.css";
+import { FaArrowAltCircleDown } from "react-icons/fa";
 
 function ContactUs() {
   const [show, setShow] = useState(false);
@@ -21,7 +22,7 @@ function ContactUs() {
             return (
               <div key={data.id} className="questions-answers-container">
                 <div className="questions-container">
-                  <strong>{data.question}</strong>
+                 <div className="drop-down-container"><strong className="questions-text">{data.question}</strong><span className="arrow-icon"><FaArrowAltCircleDown/></span></div> 
                 </div>
 
                 <div className="answers-container">{data.answer}</div>

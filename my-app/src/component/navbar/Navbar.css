@@ -19,6 +19,9 @@
 a:link {
   text-decoration: none !important;
 }
+.navbar-list:hover {
+  text-decoration: underline;
+}
 
 .navbar-list,
 li:last-child {
