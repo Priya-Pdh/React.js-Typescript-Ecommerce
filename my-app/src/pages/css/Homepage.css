@@ -33,7 +33,7 @@
   margin-bottom: 5%;
   font-weight: bolder;
 }
-.welcome-para::before {
+.welcome-para::after {
   content: "WELCOME TO SHOPPERS";
   width: 100%;
   color: rgb(201, 138, 104);
