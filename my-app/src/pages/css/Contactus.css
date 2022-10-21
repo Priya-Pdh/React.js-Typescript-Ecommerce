@@ -62,11 +62,11 @@
 /* for mobile*/
 @media only screen and (min-device-width: 360px) and (max-device-width: 819px) {
   .questions-answers-container {
-    font-size: 10px;
+    font-size: 8px;
     line-height: 0.75rem;
   }
   .comDetailButton {
-    font-size: 10px;
+    font-size: 8px;
     margin: 2%;
     width: 25%;
   }
