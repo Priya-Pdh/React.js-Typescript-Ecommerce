@@ -21,7 +21,10 @@
 
 a:link {
   text-decoration: none !important;
-  
+}
+a:focus-visible {
+  outline: 2px solid rgb(82, 60, 47);
+  outline-offset: 1px;
 }
 .navbar-list:hover {
   text-decoration: underline;

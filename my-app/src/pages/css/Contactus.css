@@ -22,6 +22,12 @@
   display: none;
   padding: 20px;
 }
+.answers-container {
+  color: rgb(82, 60, 47);
+  margin-bottom: 1%;
+  display: none;
+  padding: 20px;
+}
 .drop-down-container {
   display: flex;
   justify-content: space-between;

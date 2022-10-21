@@ -34,7 +34,11 @@ li {
   margin-bottom: 10px;
   margin-top: 10px;
   background-color: rgb(115, 148, 132);
-  font-family: 'Bodoni Moda', sans-serif;
+  font-family: "Bodoni Moda", sans-serif;
+}
+.add-button:focus-visible {
+  outline: 2px solid rgb(201, 138, 104);
+  outline-offset: 3px;
 }
 
 /* for iPad*/
