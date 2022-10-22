@@ -44,6 +44,7 @@ function Login() {
             className="U_Name_Login"
             value={loginName}
             onChange={(e) => setLoginName(e.target.value)}
+            required
           />
 
           <br></br>
@@ -54,6 +55,7 @@ function Login() {
             placeholder="Password"
             id=""
             className="U_password_Login"
+            required
           />
           <br />
           <br />

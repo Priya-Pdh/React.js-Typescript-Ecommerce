@@ -29,6 +29,7 @@ function Footer() {
             placeholder="Email@gmail.com"
             className=""
             id="email-input"
+            required
           />
           <br />
           <button type="submit" id="subscribe-button">Subscribe</button>
