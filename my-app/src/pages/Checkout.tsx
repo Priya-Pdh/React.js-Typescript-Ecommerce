@@ -7,9 +7,7 @@ import Footer from "../component/footer/Footer";
 import { usePersonalDetailsContext } from "../component/context/PersonalDetailsContext";
 
 function Checkout() {
-  const { setName } = usePersonalDetailsContext();
-  const { setStreetAddress } = usePersonalDetailsContext();
-  const { setEmail } = usePersonalDetailsContext();
+  const { setName, setStreetAddress, setEmail } = usePersonalDetailsContext();
 
   const [fullName, setFullName] = useState("");
   const [emailAddress, setEmailAddress] = useState("");
